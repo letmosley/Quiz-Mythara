@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythara - Descubra sua Essência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Página de Introdução -->
+    <div class="intro-container" id="intro">
+        <h1>Bem-vindo a Mythara</h1>
+        <p>Em Mythara, cada alma possui uma essência única. Descubra a sua e embarque em uma jornada de autoconhecimento.</p>
+        
+        <!-- Imagens das Essências -->
+        <div class="essences">
+            <img src="images/vida.png" alt="Vida" title="Vida" class="essence-image">
+            <img src="images/caos.png" alt="Caos" title="Caos" class="essence-image">
+            <img src="images/ilusao.png" alt="Ilusão" title="Ilusão" class="essence-image">
+            <img src="images/barganha.png" alt="Barganha" title="Barganha" class="essence-image">
+            <img src="images/justica.png" alt="Justiça" title="Justiça" class="essence-image">
+        </div>
+
+        <button class="start-button" onclick="startQuiz()">Iniciar Teste</button>
+    </div>
+
+<!-- Página do Quiz -->
+<div class="container" id="quiz" style="display: none;">
+    <h1>Descubra sua Essência</h1>
+    <!-- Exibição do progresso -->
+    <p id="progress">1/27</p>
+    <div id="quiz-container">
+        <div id="question"></div>
+        <div id="options">
+            <button class="option" onclick="selectOption(1)">Concordo</button>
+            <button class="option" onclick="selectOption(2)">Concordo Completamente</button>
+            <button class="option" onclick="selectOption(0)">Neutro</button>
+            <button class="option" onclick="selectOption(-2)">Discordo Completamente</button>
+            <button class="option" onclick="selectOption(-1)">Discordo</button>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Página de Resultados -->
+    <div class="container" id="result-container" style="display: none;">
+        <h2>Sua Essência é:</h2>
+        <img id="element-image" alt="Imagem da essência" style="width: 150px; height: 150px; margin-top: 10px;">
+        <p id="result"></p>
+        <p id="element-description"></p>
+        <button id="retry-button" onclick="restartQuiz()">Refazer o Quiz</button>
+        <button id="whatsapp-share" onclick="shareOnWhatsApp()">Compartilhar no WhatsApp</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

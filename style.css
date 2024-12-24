@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0b0b0d, #1e1e23);
+    color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container, .intro-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #ffd700; /* Dourado */
+}
+
+p {
+    color: #b5d6f8; /* Azul bebê */
+}
+
+.option, .start-button {
+    background: #ffd700;
+    color: #0b0b0d;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover, .start-button:hover {
+    background: #b89c30;
+}
+
+.essences {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.essence-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.essence-image:hover {
+    transform: scale(1.2);
+}
+/* Botões do resultado */
+#result-container button {
+    display: inline-block;
+    background: linear-gradient(120deg, #ff8c00, #ffcd3c);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#result-container button:hover {
+    background: linear-gradient(120deg, #e67e22, #f1c40f);
+    transform: scale(1.1);
+}
+
+#result-container button:active {
+    transform: scale(0.9);
+    background: linear-gradient(120deg, #c56b15, #e0a00b);
+}
+
+/* Estilo do progresso */
+#progress {
+    font-size: 18px;
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
